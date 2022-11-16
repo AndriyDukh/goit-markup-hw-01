@@ -13,9 +13,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
 }
 
 body {
@@ -24,7 +21,9 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
-    overflow-x: hidden;
+   
+    margin: 0 auto;
+    padding: 0;
     
 }
 
