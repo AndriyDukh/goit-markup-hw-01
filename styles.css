@@ -11,6 +11,12 @@
     --button-active: #188CE8;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(-white-color);
     color: var(--primary-color);
@@ -34,7 +40,7 @@ ul {
      white-space: nowrap;
      clip-path: inset(100%);
      clip: rect(0 0 0 0);
-     overflow: hidden;
+     overflow: hidden; 
  }
  
 /* Лого*/
@@ -46,6 +52,7 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    margin: 25px 95px 25px 215px;
 }
 
 .logo>span {
@@ -53,6 +60,23 @@ ul {
 }
 
 /* Шапка */
+
+header {
+    width: 1600px;
+    height: 80px;  
+}    
+
+.logo,
+.nav,
+.navigation,
+.contacts,
+.inline-block {
+    display: inline-block;
+}
+
+.contacts {
+    margin-left: 300px;
+}
 
 .link,
 .link-contact {
@@ -67,6 +91,11 @@ ul {
     color: var(--second-color);
 }
 
+.inline-block {
+    margin-right: 50px;
+    
+}
+
 .link:hover,
 .link-contact:hover {
     color: var(--accent-color);
@@ -79,6 +108,11 @@ ul {
     background-color: var(--second-bgc-color);
 }
 
+.hero {
+    width: 1600px;
+    height: 600px;
+}
+
 .hero-title {
     color: var(--white-color);
     font-weight: 900;
@@ -87,6 +121,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    padding: 195px 450px 35px 450px;
 }
 
 .button {
@@ -99,6 +134,9 @@ ul {
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    width: 215px;
+    height: 50px;
+    margin: 0px 690px;
 }
 
 .button:hover,
@@ -123,6 +161,21 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+
+.advantage {
+    height: 100px;
+    margin: 95px 215px 95px 215px;
+}
+
+.list-advantage {
+    width: 270px;
+    height: 100px;
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .list-text {
