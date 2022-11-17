@@ -13,6 +13,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -20,12 +22,9 @@ body {
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    font-size: 14px;
-   
-    margin: 0 auto;
-    padding: 0;
-    
+    font-size: 14px; 
 }
+
 
 ul {
     list-style-type: none;
@@ -185,16 +184,30 @@ header {
     line-height: 1.71;
 }
 
+/* Чим ми займаємося */
+
+.img {
+    display: inline-block;   
+}
+
+.what-are-you {
+    text-align: center;
+}
 /* Наша команда */
 
 .section-team {
     background-color: var(--bgc-section-team);
 }
 
+.team {
+    text-align: center;
+}
+
 .team-card {
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    display: inline-block;
 }
 
 .team-name {
