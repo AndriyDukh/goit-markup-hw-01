@@ -11,6 +11,7 @@
     --button-active: #188CE8;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -26,6 +27,17 @@ body {
     width: 1600px;
     margin: 0 auto;
 }
+
+
+/* @media (max-width: 998px) {
+    body {
+        width: 80%;
+    }
+
+    .logo {
+        color: #212121;
+    }
+} */
 
 
 ul {
@@ -91,7 +103,7 @@ ul {
 
 .inline-block {
     margin-right: 50px;
-    
+    margin-top: 30px;
 }
 
 .link:hover,
@@ -218,6 +230,8 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -229,8 +243,17 @@ ul {
 
 /* Підвал сторінки */
 
+.footer {
+    height: 250px;
+}
+
 .logo-footer>span {
     color: var(--white-color);
+}
+
+.logo-footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .link-footer {
@@ -238,6 +261,8 @@ ul {
     line-height: 1.71;
     text-decoration: none; 
     font-style: normal; 
+    margin-bottom: 10px;
+    margin-left: 215px;
 }
 
 .contact {
