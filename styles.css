@@ -9,8 +9,8 @@
     --button-portfolio: #F5F4FA;
     --shadow-color: #EEEEEE;
     --button-active: #188CE8;
+    --bgc-color-page: #F5F5F5;
 }
-
 
 * {
     box-sizing: border-box;
@@ -18,8 +18,12 @@
     padding: 0;
 }
 
+html {
+    background-color: var(--bgc-color-page);
+}
+
 body {
-    background-color: var(-white-color);
+    background-color: var(--white-color);
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -27,18 +31,6 @@ body {
     width: 1600px;
     margin: 0 auto;
 }
-
-
-/* @media (max-width: 998px) {
-    body {
-        width: 80%;
-    }
-
-    .logo {
-        color: #212121;
-    }
-} */
-
 
 ul {
     list-style-type: none;
@@ -67,7 +59,7 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin: 25px 95px 25px 215px;
+    margin: 25px 90px 25px 215px;
 }
 
 .logo>span {
@@ -75,6 +67,10 @@ ul {
 }
 
 /* Шапка */
+
+.header-portfolio {
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.05);
+}
 
 .logo,
 .nav,
@@ -85,7 +81,7 @@ ul {
 }
 
 .contacts {
-    margin-left: 300px;
+    margin-left: 260px;
 }
 
 .link,
@@ -97,8 +93,19 @@ ul {
     text-decoration: none;
 }
 
+.header-contact {
+    display: inline-block;
+}
+
 .link-contact {
     color: var(--second-color);
+    margin-right: 30px;
+}
+
+.envelope,
+.phone {
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .inline-block {
@@ -107,21 +114,19 @@ ul {
 }
 
 .link:hover,
-.link-contact:hover {
+.link-contact:hover,
+.envelope:hover, 
+.phone:hover {
     color: var(--accent-color);
 }
 
 /* Герой */
 
-.hero,
-.footer {
-    background-color: var(--second-bgc-color);
-}
-
 .hero {
+    background-image: url("/images/hero.jpg");
     height: 600px;
 }
-
+   
 .hero-title {
     color: var(--white-color);
     font-weight: 900;
@@ -166,6 +171,32 @@ ul {
 
 /* Переваги */
 
+.svg {
+    background-color: var(--bgc-section-team);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.svg1 {
+    background-image: url(/svg/svg1.svg);
+}
+
+.svg2 {
+    background-image: url(/svg/svg2.svg);
+}
+
+.svg3 {
+    background-image: url(/svg/svg3.svg);
+}
+
+.svg4 {
+    background-image: url(/svg/svg4.svg);
+}
+
 .list-title {
     font-weight: 700;
     line-height: 1.14;
@@ -175,13 +206,14 @@ ul {
 }
 
 .advantage {
-    margin: 95px 0px;
+    margin-top: 90px;
     margin-left: 215px;
+    margin-bottom: 95px;
 }
 
 .list-advantage {                    
     width: 270px;
-    height: 100px;
+    height: 250px;
     margin-right: 30px;
     display: inline-block;
     vertical-align: middle;
@@ -218,7 +250,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
     display: inline-block;
     margin-right: 30px;
-    height: 370px;
+    height: 430px;
 }
 
 .team {
@@ -245,6 +277,7 @@ ul {
 
 .footer {
     height: 250px;
+    background-color: var(--second-bgc-color);
 }
 
 .logo-footer>span {
@@ -261,8 +294,11 @@ ul {
     line-height: 1.71;
     text-decoration: none; 
     font-style: normal; 
-    margin-bottom: 10px;
     margin-left: 215px;
+}
+
+.contact-footer {
+    margin-bottom: 10px;
 }
 
 .contact {
@@ -282,25 +318,64 @@ ul {
     line-height: 1.62;
     background: var(--button-portfolio);
     border-radius: 4px;
-    border: none
+    border: none;
+    padding: 6px 25px;
+    margin-right: 8px;
 }
 
 .portfolio-nav:hover {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .work-list {
     color: var(--primary-color);
     text-decoration: none;
 }
+
 .list {
     border: 1px solid var(--shadow-color);
+    height: 405px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }    
+
+.list:hover {
+    border: 1px solid #EEEEEE;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .work-list > p {
     font-size: 16px;
     line-height: 1.8;
-    color: var(--second-color)
+    color: var(--second-color);
+    margin-left: 25px;
+}
+
+.list-nav {
+    display: inline-block;
+}
+
+.block-nav {
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 50px;
+}
+
+.work-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.portfolio-work {
+    margin-left: 185px;
 }
